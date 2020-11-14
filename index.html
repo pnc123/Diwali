@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title>Diwali</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<style type="text/css">
+		body{
+			background-color: {{color}};
+		}
+		h1,h4,h2,h3{
+			text-align: center;
+		}
+
+		select{
+			height: 40px;
+			width: 200px;
+			border-radius: 10px;
+			text-align: center;
+		}
+
+		img{
+			max-width: 20px;
+			border-radius: 50%;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+			font-size: 20px;
+		}
+		div{
+			text-align: center;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Happy Diwali To All</h1><hr>
+	<h3>SELECT FEST DAY:- 
+		<select ng-model="fest">
+			<option>Dhanterash</option>
+			<option>Choti Diwali</option>
+			<option selected>Diwali</option>
+			<option>Govardhan Pooja</option>
+			<option>Bhai Dooj</option>
+		</select>
+	</h3><br>
+	<h3>SET BACKGROUND COLOR:- 
+		<select ng-model="color">
+			<option>BLUE</option>
+			<option>GREEN</option>
+			<option selected>RED</option>
+			<option>YELLOW</option>
+			<option>CYAN</option>
+		</select>
+	</h3>
+	<br><br>
+	<h1>Happy {{fest}} To All</h1>
+<hr>
+<div class="foot">
+				<h4>SOCIAL</h4>
+        		<div class='pr'>
+        			<div><img src="facebook.jpg" class="fimg"><a href="https://m.facebook.com/praveen.sanpda.9"> Facebook</a></div>
+					<div><img src="instagram.jpg" class="fimg"><a href="https://www.instagram.com/praveen_sanpada/"> Instagram</a></div>
+					<div><img src="linkedin.png" class="fimg"><a href="https://www.linkedin.com/in/praveen-sanpada-933975170"> LinkedIn</a></div>
+					<div><img src="github.png" class="fimg"><a href="https://github.com/pnc123">   Github</a></div>
+        		</div>
+        	</div>
+<br><hr>
+<h4>Copyright@praveen.com</h4>
+</body>
+</html>
